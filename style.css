@@ -1,0 +1,286 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+}
+/* --------------header----------------- */
+
+.header{
+    cursor: pointer;
+    position: fixed; 
+    background: rgba(169,169,169,0.9);
+    height: 45px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    display: flex;
+}
+.header h1{
+    color:#ffff1c;
+    font-family: 'Playfair Display', serif;
+}
+.header a{
+    text-decoration: none;
+}
+.options{
+    margin-left: 55%;
+    margin-top: 1.5vh;
+}
+
+
+.options a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2vw;
+    text-decoration: none;
+    font-weight:bolder;
+    margin-right: 85px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    color: black;
+}
+
+.options a:hover{
+    height: 100px;
+    width: 150px;
+    
+    color: white;
+    text-decoration: underline;
+    
+}
+/* -------------------------About------------------- */
+#about{
+    height: 100vh;
+    background-image: linear-gradient(to right, #C33764, #1D2671);
+    margin-bottom: 5px;
+}
+.about{
+    box-shadow: 20px 20px 50px black;
+    margin-top: 65px;
+    margin-left: 5%;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 10px;
+}
+.aboutmyself{
+    font-size: 1.3vw;
+}
+.aboutmyself h1 {
+    font-family: 'Ysabeau Office', sans-serif;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.aboutmyself h3 {
+    font-family: 'Ysabeau Office', sans-serif;
+    color:#C33764;
+    text-decoration: underline;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.aboutmyself h2{
+    font-family: 'Ysabeau Office', sans-serif;
+    color:#C33764;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.aboutmyself p{
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.mypic{
+    padding-right: 5%;
+}
+.img{
+    border-radius: 10px;
+}
+.experience{
+    font-family: 'Ysabeau Office', sans-serif;
+    text-decoration: underline;
+    margin-top: -14px;
+}
+.download{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.download a{
+    text-decoration: none;
+    color: darkblue;
+}
+/* ---------------------skills----------- */
+#skills{
+    height: 100vh;
+    background-image: linear-gradient(to right,#6441A5,#2a0845);
+    margin-bottom: 5px;
+}
+.skills{
+    padding-top: 150px;
+    margin-bottom: 80px;
+}
+.skillheading{
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: 'Ysabeau Office', sans-serif;
+    color: white;
+}
+.skillcards{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    transition-duration: 0.1s;
+    display: block;
+}
+.card:hover{
+    transform: scale(1.1);
+    padding-top: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cardHead{
+    font-size: 2.5vw;
+}
+.thirdSkill{
+    margin-left: 60px;
+}
+
+/* ------------------projects----------------- */
+#projects{
+    height: 180vh;
+    background-image: linear-gradient(to right,#4CA1AF,#C4E0E5);
+}
+.project{
+    margin-bottom: 80px;
+    margin-left: 10%;
+    margin-top: 200px;
+   
+}
+.firstProject,.secondProject,.thirdProject{
+    box-shadow: 20px 20px 50px black;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-image: linear-gradient(to left,#0F2027,#203A43,#2C5364);
+    color: white;
+    height: 290px;
+    width: 80vw;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.firstProjectHeading{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.secondProjectHeading{
+    padding-left: 5%;
+}
+.thirdProjectHeading{
+    padding-left: 5%;
+}
+.project h1{
+    font-family: 'Ysabeau Office', sans-serif;
+    padding-bottom: 10px;
+    
+}
+.ProjectH{
+    color:#f12711;
+    
+}
+.project p{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.project img{
+    border-radius: 10px;
+}
+
+/* ------------------contact------ */
+#contact{
+    margin-top: 7px;
+    height: 60vh;
+    background-image: linear-gradient(to right,#00c3ff,#ffff1c);
+}
+#contact{
+    padding-top: 250px;
+}
+.contact{
+    color: white;
+    box-shadow: 20px 20px 50px black;
+    background-image: linear-gradient(to right,#141E30,#243B55);
+    margin-left: 15%;
+    height: 250px;
+    width: 70vw;
+    padding-top: 10px;
+    padding-left: 25px;
+    border-radius: 10px;
+}
+.contact h1{
+    font-family: 'Ysabeau Office', sans-serif;
+}
+.contact p{
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-right: 50px;
+}
+.socialmedia{
+    display: flex;
+    margin-top: 15px;
+}
+.socialmedia a{
+    color: white;
+    padding-right: 20px;
+}
+.personalContact{
+    margin-top: 35px;
+}
+.whatsapp{
+    padding-top: 15px;
+    display: flex;
+}
+.whatsapp p{
+    margin-top: -8px;
+    margin-left: 12px;
+}
+.mail{
+    display: flex;
+}
+.mail p{
+    margin-top: -8px;
+    margin-left: 8px;
+}
+/* -----------------------copyrights----------- */
+.copyright{
+    height: 30px;
+}
+
+.copy{
+    text-align: center;
+    font-size: 1.5vw;
+}
